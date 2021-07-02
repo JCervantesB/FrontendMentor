@@ -1,0 +1,39 @@
+{
+  "name": "social-proof",
+  "version": "1.0.0",
+  "description": "social-proof-section-master from FrontendMentor.io",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JCervantesB/social-proof-section-master.git"
+  },
+  "keywords": [
+    "SASS",
+    "Gulp",
+    "Challange",
+    "Frontend",
+    "Mentor"
+  ],
+  "author": "Julio Cervantes",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JCervantesB/social-proof-section-master/issues"
+  },
+  "homepage": "https://github.com/JCervantesB/social-proof-section-master#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.2.6",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-notify": "^4.0.0",
+    "gulp-postcss": "^9.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0"
+  },
+  "dependencies": {
+    "cssnano": "^5.0.6",
+    "sass": "^1.35.1"
+  }
+}

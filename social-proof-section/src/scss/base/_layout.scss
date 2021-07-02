@@ -1,0 +1,125 @@
+.main {
+	margin-top: 5rem;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+
+    @include desktop {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        
+    }
+}
+@include desktop {
+    .ratings {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .main_sec-1 {
+        text-align: left;
+    }
+}
+
+.star-review {
+    color: $VeryDarkMagenta;
+    font-weight: bold;
+}
+.rating-card {
+	background-color: $LightMagenta;
+	border-radius: 1rem;
+	margin: 1rem 0;
+	padding: 15px;
+	
+    .stars {
+        background: url(../img/icon-star.svg) repeat-x;
+        height: 1.5rem;
+        width: 8.5rem;
+        display: inline-block;
+        padding: 1rem;
+
+    }
+
+    @include desktop {
+        display: grid;
+        width: 45rem;
+        grid-template-columns: 1fr 2fr;
+
+        .stars {
+            text-align: left;
+            margin-left: 1rem;
+        }
+    }
+}
+@include desktop {
+    .r-card1 {
+        margin-right: 10rem;
+    }
+    .r-card2 {
+        margin-right: 5rem;
+    }
+}
+
+.reviewer-section {
+    display: flex;
+    flex-direction: column;
+
+    @include desktop {
+        margin-top: 5rem;
+        flex-direction: row;
+    }
+}
+.reviewer_card {
+    background-color: $VeryDarkMagenta;
+    border-radius: 1.2rem;
+    color: $White;
+    font-weight: $medium;
+    margin: 1rem 0;
+    padding: 3rem 2.5rem;
+
+    @include desktop {
+        flex-grow: 1;
+		flex-basis: 0;
+		margin: 0 10px;
+		height: 25rem;
+
+        .reviewer-card:nth-child(2) {
+            margin-top: 1%;
+        }
+        
+        .reviewer-card:nth-child(3) {
+            margin-top: 2%;
+            
+        }
+    }
+    
+    .verify {
+        font-weight: $regular;
+        color: $SoftPink;
+    }
+}
+.profile {
+   display: flex;
+   align-items: center;
+    p {
+        line-height: .5;
+    }
+}
+.profile_avatar img {
+    width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	margin-right: 2.5rem;
+}
+
+@include desktop {
+    .rev-card1 {
+        margin-bottom: 4rem;
+    }
+    .rev-card2 {
+        margin-top: 2rem;
+    }
+    .rev-card3 {
+        margin-top: 4rem;
+    }
+}
